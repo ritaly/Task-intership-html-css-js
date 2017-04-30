@@ -24,7 +24,7 @@ zmienić się na "Animuję się". Po przesunięciu kursora myszy poza nagłówek
 6. Rozwiązane zadanie powinno zostać przesłane w formie archiwum zip. Zostanie
 sprawdzone w nowoczesnej przeglądarce (Chrome/Firefox).  
 
-##BONUSOWE ZADANIA:  
+## BONUSOWE ZADANIA:  
 
 1. Niech nagłówek z imieniem i nazwiskiem będzie obrócony o 30 stopni przeciwnie
 do ruchu wskazówek zegara.
