@@ -1,0 +1,99 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css ">
+</head>
+
+<body>
+  <div class="container" role="main">
+
+    <header>
+      <p>Imię Nazwisko</p>
+    </header>
+    <div class="row">
+      <div class="col-md-3 grey">
+        <ul class="list-unstyled">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+      <div class="col-md-9 grey">
+        <section>
+          <h2 onmouseover="anim()" onmouseout="back()">Formularz</h2>
+          <form class="form-horizontal" action="javascript:void(0);">
+            <div class="form-group">
+              <label class="control-label col-sm-2"> Wpisz zdanie: </label>
+              <div class="col-sm-6">
+                <input class="form-control" type="text" placeholder="np. Jakiś text">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-3">
+                <button class="btn btn-success" id="move" onclick="inv()">Odwróć</button>
+              </div>
+            </div>
+          </form>
+        </section>
+        <section class="res">
+          <h3>Wynik:</h3>
+          <p id="result"></p>
+        </section>
+        <section>
+          <h3>Lista</h3>
+          <ul id="names">
+            <li>Maria</li>
+            <li>Łukasz</li>
+            <li>Kamil</li>
+            <li>Anna</li>
+          </ul>
+          <button type="submit" class="btn btn-info" onclick="sort()">Sortuj</button>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function inv() {
+      var txt = document.querySelector('input').value;
+      var rev = txt.split("").reverse().join("").split(" ").reverse().join(" ");
+      document.getElementById("result").innerHTML = rev;
+    }
+
+    function anim() {
+      var t = document.getElementById('move');
+      t.innerHTML = "Animuje się";
+      t.style.marginLeft = '200px';
+    }
+
+    function back() {
+      var t = document.getElementById('move');
+      t.innerHTML = "Odwróć";
+      t.style.marginLeft = '0px';
+    }
+
+    function sort() {
+      var list = document.getElementById("names").querySelectorAll('li');
+      var arr = [];
+      for (var i = 0; i < list.length; i++) {
+        arr.push(list[i].innerText);
+      }
+      arr.sort();
+      var sortedList = "";
+      for (var j = 0; j < arr.length; j++) {
+        sortedList += "<li>" + arr[j] + "</li>";
+      }
+      document.getElementById("names").innerHTML = sortedList;
+    }
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
