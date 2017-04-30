@@ -30,3 +30,5 @@ sprawdzone w nowoczesnej przeglądarce (Chrome/Firefox).
 do ruchu wskazówek zegara.
 2. Po kliknięciu na przycisk "Sortuj" pod listą imion w jej miejscu powinna pojawić się
 ta sama lista, ale z imionami posortowanymi alfabetycznie.
+
+![Szablon](/template.jpg)
