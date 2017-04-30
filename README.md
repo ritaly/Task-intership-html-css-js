@@ -22,8 +22,10 @@ powinien płynnie przesunąć się o 200 pikseli w prawo i tekst w nim powinien
 zmienić się na "Animuję się". Po przesunięciu kursora myszy poza nagłówek
 "Formularz" przycisk powinien wrócić do stanu pierwotnego.
 6. Rozwiązane zadanie powinno zostać przesłane w formie archiwum zip. Zostanie
-sprawdzone w nowoczesnej przeglądarce (Chrome/Firefox).
-##BONUSOWE ZADANIA:
+sprawdzone w nowoczesnej przeglądarce (Chrome/Firefox).  
+
+##BONUSOWE ZADANIA:  
+
 1. Niech nagłówek z imieniem i nazwiskiem będzie obrócony o 30 stopni przeciwnie
 do ruchu wskazówek zegara.
 2. Po kliknięciu na przycisk "Sortuj" pod listą imion w jej miejscu powinna pojawić się
